@@ -10,6 +10,10 @@
       tr,
       td,
       th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 12px;
+        padding-right: 12px;
         border: 1px solid black;
         border-collapse: collapse;
       }
@@ -18,7 +22,7 @@
   <body>
     <table>
       <caption>
-        <b>Resumen HTML</b>
+        <h1>Resumen HTML</h1>
       </caption>
       <tr class="row">
         <th>Etiqueta</th>
@@ -26,22 +30,22 @@
         <th>Ejemplo</th>
       </tr>
       <tr class="row">
-        <td class="col">h1</td>
+        <td class="col">&lt;h1&gt;</td>
         <td class="col">Genera un encabezado nivel 1.</td>
         <td class="col"><h1>Titulo 1</h1></td>
       </tr>
       <tr class="row">
-        <td class="col">h2</td>
+        <td class="col">&lt;h2&gt;</td>
         <td class="col">Genera un encabezado nivel 2.</td>
         <td class="col"><h2>Titulo 2</h2></td>
       </tr>
       <tr class="row">
-        <td class="col">h6</td>
+        <td class="col">&lt;h6&gt;</td>
         <td class="col">Genera un encabezado nivel 6.</td>
         <td class="col"><h6>Titulo 6</h6></td>
       </tr>
       <tr class="row">
-        <td class="col">p</td>
+        <td class="col">&lt;p&gt;</td>
         <td class="col">Genera un parrafo.</td>
         <td class="col">
           <p>Parrafo 1</p>
@@ -49,44 +53,44 @@
         </td>
       </tr>
       <tr class="row">
-        <td class="col">pre</td>
+        <td class="col">&lt;pre&gt;</td>
         <td class="col">
           Genera un parrafo que cuenta espacios y tabuladores.
         </td>
         <td class="col"><pre>Parrafo     pre</pre></td>
       </tr>
       <tr class="row">
-        <td class="col">br</td>
+        <td class="col">&lt;br&gt;</td>
         <td class="col">Genera un salto de linea.</td>
         <td class="col"><br />Estoy tien un br <br /></td>
       </tr>
       <tr class="row">
-        <td class="col">hr</td>
+        <td class="col">&lt;hr&gt;</td>
         <td class="col">Genera una linea horizontal en toda la pagina.</td>
         <td class="col"><hr /></td>
       </tr>
       <tr class="row">
-        <td class="col">b</td>
+        <td class="col">&lt;b&gt;</td>
         <td class="col">Genera los caracteres en negrita.</td>
         <td class="col"><b>Genera los caracteres en negrita.</b></td>
       </tr>
       <tr class="row">
-        <td class="col">i</td>
+        <td class="col">&lt;i&gt;</td>
         <td class="col">Genera los caracteres en cursiva.</td>
         <td class="col"><i>Genera los caracteresen cursiva.</i></td>
       </tr>
       <tr class="row">
-        <td class="col">u</td>
+        <td class="col">&lt;u&gt;</td>
         <td class="col">Genera los caracteres subliñados.</td>
         <td class="col"><u>Genera los caracteres subliñados.</u></td>
       </tr>
       <tr class="row">
-        <td class="col">strong</td>
+        <td class="col">&lt;strong&gt;</td>
         <td class="col">Genera un texto importante.</td>
         <td class="col"><strong>Genera un texto importante.</strong></td>
       </tr>
       <tr class="row">
-        <td class="col">em</td>
+        <td class="col">&lt;em&gt;</td>
         <td class="col">
           Utilizado paramarcar con énfasis las partes importantes de un texto.
         </td>
@@ -98,24 +102,24 @@
         </td>
       </tr>
       <tr class="row">
-        <td class="col">mark</td>
+        <td class="col">&lt;mark&gt;</td>
         <td class="col">Utilizado para marcar texto importante.</td>
         <td class="col">
           <mark>Utilizado para marcar texto importante.</mark>
         </td>
       </tr>
       <tr class="row">
-        <td class="col">sub</td>
+        <td class="col">&lt;sub&gt;</td>
         <td class="col">Utilizado como un subíndice.</td>
         <td class="col"><sub>Utilizado como un subíndice.</sub></td>
       </tr>
       <tr class="row">
-        <td class="col">sup</td>
+        <td class="col">&lt;sup&gt;</td>
         <td class="col">Utilizado como un superíndice.</td>
         <td class="col"><sup>Utilizado como un superíndice.</sup></td>
       </tr>
       <tr class="row">
-        <td class="col">ins</td>
+        <td class="col">&lt;ins&gt;</td>
         <td class="col">
           Marca las partes de un texto que han sido añadidos al documento.
         </td>
@@ -127,7 +131,7 @@
         </td>
       </tr>
       <tr class="row">
-        <td class="col">del</td>
+        <td class="col">&lt;del&gt;</td>
         <td class="col">
           Marca las partes de un texto que han sido eliminados del documento.
         </td>
@@ -139,20 +143,22 @@
         </td>
       </tr>
       <tr class="row">
-        <td class="col">a</td>
-        <td class="col">Genera un link</td>
+        <td class="col">&lt;a&gt;</td>
+        <td class="col">Genera un link a partir de una URL</td>
         <td class="col">
           <a href="https://www.w3schools.com/tags/tag_a.asp">Link</a>
         </td>
       </tr>
       <tr class="row">
-        <td class="col">title</td>
+        <td class="col">&lt;title&gt;</td>
         <td class="col">Genera el titulo de la pagina web.</td>
         <td class="col">Ejemplo en el titulo de esta pagina.</td>
       </tr>
       <tr class="row">
-        <td class="col">target</td>
-        <td class="col">Genera un link que se habre en otra pestaña.</td>
+        <td class="col">&lt;target&gt;</td>
+        <td class="col">
+          Genera un link que se habre en otra pestaña a partir de una URL.
+        </td>
         <td class="col">
           <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank"
             >Link</a
@@ -160,8 +166,8 @@
         </td>
       </tr>
       <tr class="row">
-        <td class="col">img</td>
-        <td class="col">Genera una imagen.</td>
+        <td class="col">&lt;img&gt;</td>
+        <td class="col">Genera una imagen a partir de una URL.</td>
         <td class="col">
           <img
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.icon-icons.com%2Ficons2%2F564%2FPNG%2F512%2FGallery_icon-icons.com_54177.png&f=1&nofb=1"
@@ -170,7 +176,7 @@
         </td>
       </tr>
       <tr class="row">
-        <td class="col">ol</td>
+        <td class="col">&lt;ol&gt;</td>
         <td class="col">Genera un lista ordenada.</td>
         <td class="col" rowspan="2">
           <ol>
@@ -180,11 +186,11 @@
         </td>
       </tr>
       <tr class="row">
-        <td class="col">li</td>
+        <td class="col">&lt;li&gt;</td>
         <td class="col">Genera los puntos de una lista.</td>
       </tr>
       <tr class="row">
-        <td class="col">ul</td>
+        <td class="col">&lt;ul&gt;</td>
         <td class="col">Genera una lista de puntos.</td>
         <td class="col">
           <ul>
@@ -194,7 +200,7 @@
         </td>
       </tr>
       <tr class="row">
-        <td class="col">dl</td>
+        <td class="col">&lt;dl&gt;</td>
         <td class="col">Genera un lista descriptiva.</td>
         <td class="col" rowspan="3">
           <dl>
@@ -204,15 +210,15 @@
         </td>
       </tr>
       <tr class="row">
-        <td class="col">dt</td>
+        <td class="col">&lt;dt&gt;</td>
         <td class="col">Genera el titulo de la lista descriptiva</td>
       </tr>
       <tr class="row">
-        <td class="col">dd</td>
+        <td class="col">&lt;dd&gt;</td>
         <td class="col">Genera la descripcion en la lista descriptiva.</td>
       </tr>
       <tr class="row">
-        <td class="col">table</td>
+        <td class="col">&lt;table&gt;</td>
         <td class="col">Genera una tabla.</td>
         <td class="col" rowspan="3">
           <table>
@@ -228,12 +234,11 @@
         </td>
       </tr>
       <tr class="row">
-        <td class="col">tr</td>
+        <td class="col">&lt;tr&gt;</td>
         <td class="col">Genera la fila en una tabla.</td>
-        <td class="col">tr</td>
       </tr>
       <tr class="row">
-        <td class="col">caption</td>
+        <td class="col">&lt;td&gt;</td>
         <td class="col">Genera la columna en una tabla.</td>
       </tr>
     </table>
