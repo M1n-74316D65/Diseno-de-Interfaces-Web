@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resumen HTML</title>
     <style>
-      html, body {
+      html,
+      body {
         background-color: #282a36;
         color: #f8f8f2;
       }
@@ -246,6 +247,95 @@
       <tr class="row">
         <td class="col">&lt;td&gt;</td>
         <td class="col">Genera la columna en una tabla.</td>
+      </tr>
+
+      <tr class="row">
+        <td class="col">&lt;form&gt;</td>
+        <td class="col">Crear un formulario.</td>
+        <td class="col" rowspan="14">
+          <form action="/ejemplo.php" method="get" text-align: center>
+            <label for="fname">First name:</label><br />
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="Manuel"
+            /><br />
+            <label for="lname">Last name:</label><br />
+            <input type="text" id="lname" name="lname" /><br /><br />
+            <textarea id="w3review" name="w3review" rows="4" cols="50">
+Leviosaaaaaaaaaaaa
+</textarea
+            ><br />
+            <label for="datemax"
+              >Fecha mayor a 1980-01-01 y menor a 2000-01-02</label
+            ><br />
+            <input
+              type="date"
+              id="datemax"
+              name="datemax"
+              min="1979-12-31"
+              max="2000-01-02"
+            /><br />
+            <button name="subject" type="submit" value="Si">Si</button>
+          </form>
+        </td>
+      </tr>
+      <tr class="row">
+        <td class="col">&lt;input&gt;</td>
+        <td class="col">Genera una lina, la cual es interactuable.</td>
+      </tr>
+      <tr class="row">
+        <td class="col">&lt;label&gt;</td>
+        <td class="col">Genera una lina, la cual contiene texto.</td>
+      </tr>
+      <tr class="row">
+        <td class="col">&lt;id&gt;</td>
+        <td class="col">Indica el indentificador del input.</td>
+      </tr>
+      <tr class="row">
+        <td class="col">&lt;name&gt;</td>
+        <td class="col">Indica el nombre del input.</td>
+      </tr>
+      <tr class="row">
+        <td class="col">&lt;min&gt;</td>
+        <td class="col">Indica el numero minimo a introducir.</td>
+      </tr>
+      <tr class="row">
+        <td class="col">&lt;max&gt;</td>
+        <td class="col">Indica el numero maximo a introducir.</td>
+      </tr>
+      <tr class="row">
+        <td class="col">&lt;placeholder&gt;</td>
+        <td class="col">Enseña un ejemplo del input esperado.</td>
+      </tr>
+      <tr class="row">
+        <td class="col">&lt;value&gt;</td>
+        <td class="col">
+          Representa el valor de una opción en caso de ser marcada.
+        </td>
+      </tr>
+      <tr class="row">
+        <td class="col">&lt;method&gt;</td>
+        <td class="col">Indica que tipo de metodo usar GET o POST.</td>
+      </tr>
+      <tr class="row">
+        <td class="col">&lt;action&gt;</td>
+        <td class="col">
+          Indica a donde mandar la informacion del formulario tras cubrirlo.
+        </td>
+      </tr>
+      <tr class="row">
+        <td class="col">&lt;type&gt;</td>
+        <td class="col">Indica que tipo de lina de formulario es.</td>
+      </tr>
+      <tr class="row">
+        <td class="col">&lt;text-area&gt;</td>
+        <td class="col">Genera una area para poder escribir texto.</td>
+      </tr>
+      <tr class="row">
+        <td class="col">&lt;button&gt;</td>
+        <td class="col">Genera un boton.</td>
       </tr>
     </table>
   </body>
