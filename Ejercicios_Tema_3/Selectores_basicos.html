@@ -13,30 +13,54 @@
       p {
         color: #555;
       }
-      .div1 {
+      a.div1 {
+        color: red;
       }
       p.div1 {
         color: #369;
       }
+      a.div2 {
+        color: blue;
+      }
+      em.div1 {
+        color: #0000bb;
+        background-color: #000000;
+      }
+      em.div2 {
+        color: #ffff00;
+        background-color: #ffffcc;
+      }
+      span.div2 {
+        font-weight: bold;
+      }
     </style>
   </head>
   <body>
-    <span class="div1">
-      <h1>HTML & CSS: Curso práctico avanzado</h1>
-      <p class="div1">
-        Aunque los inicios de internet se remontan a los años sesenta, no ha
-        sido hasta los años noventa cuando, gracias a la Web, se ha extendido su
-        uso por todo el mundo. En pocos años, la Web ha evolucionado
-        enormemente: se ha pasado de páginas sencillas, conpocas imágenes y
-        contenidos estáticos que eran visitadas por unos pocos usuarios a
-        páginas complejas, con contenidos dinámicos que provienen de bases de
-        datos y que son visitdas por miles de usuarios la mismo tiempo
-      </p></span
-    >
+    <h1>
+      <a class="div1" href="ejemplo.html"
+        >HTML & CSS: Curso práctico avanzado</a
+      >
+    </h1>
+    <p class="div1">
+      Aunque los inicios de
+      <a class="div1" href="example.html">internet</a> se remontan a los años
+      sesenta, no ha sido hasta los años noventa cuando, gracias a la Web, se ha
+      extendido su uso por todo el mundo. En pocos años, la Web ha evolucionado
+      enormemente: se ha pasado de páginas sencillas, conpocas imágenes y
+      contenidos estáticos que eran visitadas por unos pocos usuarios a
+      <em class="div1"
+        >páginas complejas, con contenidos dinámicos que provienen de bases de
+        datos y que son visitdas por miles de usuarios la mismo tiempo.</em
+      >
+    </p>
     <p>
       Todas las páginas estan internamente constuidas con la misma tecnologia,
-      con el Lenguaje de marcas de hipertexto (Hypertext Markup Language, HTML)
-      y con las Hojas de estilo en cascada (Cascading Style Sheets, CSS).
+      con el <em class="div2">Lenguaje de marcas de hipertexto</em> (
+      <span class="div2">Hypertext Markup Language</span>,
+      <a class="div2" href="ejemple.html">HTML</a>) y con las
+      <em class="div2">Hojas de estilo en cascada</em> (<span class="div2"
+        >Cascading Style Sheets</span
+      >, <a class="div2" href="ejemple.html">CSS</a>).
     </p>
     <p>
       Este libro es adecuado para cuelquiera que tenga interés en aprender a
