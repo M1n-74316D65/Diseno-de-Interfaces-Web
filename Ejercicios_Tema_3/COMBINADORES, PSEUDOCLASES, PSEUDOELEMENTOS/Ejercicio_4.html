@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 50%;
+        height: 70px;
+        text-align: center;
+        background-color: sienna;
+        color: cornsilk;
+        font-weight: bold;
+      }
+      tr.par th {
+        background-color: cornsilk;
+        color: initial;
+      }
+      tr.inpar th {
+        background-color: darksalmon;
+        color: white;
+      }
+      tr:hover th {
+        background-color: sienna;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr class="inpar">
+        <th>Articulo</th>
+        <th>Código</th>
+        <th>Precio</th>
+      </tr>
+      <tr class="par">
+        <th>Lápiz</th>
+        <th>L-122</th>
+        <th>0.95€</th>
+      </tr>
+      <tr class="inpar">
+        <th>Boligrafo</th>
+        <th>B-343</th>
+        <th>1.95€</th>
+      </tr>
+      <tr class="par">
+        <th>Goma</th>
+        <th>G-111</th>
+        <th>1.05€</th>
+      </tr>
+      <tr class="inpar">
+        <th>Carpeta</th>
+        <th>C-555</th>
+        <th>3.955€</th>
+      </tr>
+    </table>
+  </body>
+</html>

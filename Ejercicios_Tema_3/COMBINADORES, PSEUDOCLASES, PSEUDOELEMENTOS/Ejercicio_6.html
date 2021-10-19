@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Los links visitados se marcan diferente */
+      a:visited {
+        color: blueviolet;
+      }
+      /* Marca los textarea como opcionales */
+      textarea:optional {
+        background-color: grey;
+      }
+      /* No puedes escrivir en el textarea. */
+      textarea:read-only {
+        background-color: beige;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">Link</a><br />
+    <textarea name="#" id="1" cols="30" rows="10">Hola</textarea><br />
+    <textarea readonly name="#" id="1" cols="30" rows="10">Holaa</textarea>
+  </body>
+</html>

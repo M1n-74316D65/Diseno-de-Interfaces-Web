@@ -1,0 +1,45 @@
+<!-- Todos menos el Párrafo 0 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div p {
+        background-color: pink;
+      }
+      div > p {
+        background-color: pink;
+      }
+      div + p {
+        background-color: pink;
+      }
+      div ~ p {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Párrafo 0</p>
+    <div>
+      <p>Párrafo 1</p>
+      <p>Párrafo 2</p>
+      <section><p>Párrafo 3</p></section>
+      <p>Párrafo 4</p>
+    </div>
+    <p>Párrafo 5</p>
+    <p>Párrafo 6</p>
+    <div>
+      <p>Párrafo 7</p>
+      <div>
+        <p>Párrafo 8</p>
+        <p>Párrafo 9</p>
+      </div>
+      <p>Párrafo 10</p>
+    </div>
+    <p>Párrafo11</p>
+  </body>
+</html>
