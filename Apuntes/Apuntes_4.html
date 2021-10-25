@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    ul.menuv {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: gainsboro;
+    }
+
+    ul.menuv li a {
+      display: block;
+      text-decoration: none;
+      color: black;
+      text-align: center;
+      padding: 10px;
+      border: 1px solid gray;
+    }
+
+    ul.menuv li a:hover {
+      background-color: green;
+      color: white;
+    }
+
+    ul.menuv li a.activa {
+      background-color: aquamarine;
+      color: black;
+    }
+
+    /* Menu horizontal */
+    ul.menuh {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul.menuh li {
+      display: inline-block;
+      padding: 10px;
+      background-color: gainsboro;
+    }
+
+    ul.menuh li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    ul.menuh li:hover {
+      background-color: gray;
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="menuv">
+    <li><a href="#" class="activa">Item</a></li>
+    <li><a href="#">Item</a></li>
+    <li><a href="#">Item</a></li>
+    <li><a href="#">Item</a></li>
+  </ul>
+  <br />
+  <ul class="menuh">
+    <li><a href="#">Item</a></li>
+    <li><a href="#">Item</a></li>
+    <li><a href="#">Item</a></li>
+    <li><a href="#">Item</a></li>
+  </ul>
+</body>
+
+</html>
