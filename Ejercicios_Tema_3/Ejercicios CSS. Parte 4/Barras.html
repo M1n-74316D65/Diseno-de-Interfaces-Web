@@ -14,7 +14,7 @@
             margin: 0;
             padding: 0;
             width: 200px;
-            background-color: white;
+            background-color: aliceblue;
         }
 
         ul.menu li {
@@ -25,21 +25,28 @@
             padding: 10px;
         }
 
-        ul li h2 {
+        ul.menu li h2 {
             text-align: center;
         }
 
-        ul li img {
+        ul.menu li img {
             display: block;
             margin-left: auto;
             margin-right: auto;
         }
 
-        ul.menuh li {
+        /* Horizontal */
+        ul.menuh li img {
             display: block;
-            text-decoration: none;
+            margin-left: left;
+            margin-top: 0px;
+            margin-bottom: 0%;
+        }
+
+        ul.menuh li {
             color: black;
             text-align: left;
+            display: inline-block;
             padding: 10px;
         }
 
@@ -47,12 +54,7 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
-        }
-
-        ul.menuh li {
-            display: inline-block;
-            padding: 10px;
-            background-color: gainsboro;
+            background-color: aliceblue;
         }
 
         ul.menuh li a {
@@ -68,8 +70,10 @@
 
 <body>
     <ul class="menu">
-        <li><img width="40%" height="40%"
+        <li>
+            <img width="40%" height="40%"
                 src="https://imgr.search.brave.com/Pi4CzZc2GZp817EEMNS963Vt0JX4c2HdV7oL4zXwmPE/fit/1200/1200/ce/1/aHR0cHM6Ly9hbmRy/b2lkLWpzLmdpdGh1/Yi5pby9pbWcvbm9k/ZWpzLWljb24tbG9n/by1wbmctdHJhbnNw/YXJlbnQucG5n">
+            </img>
         </li>
         <li>
             <h2><a href="#">JavaScript<br>Clases</a>
@@ -87,23 +91,18 @@
         </li>
     </ul>
     <br>
+    <!-- Horizontal -->
     <ul class="menuh">
-        <li><img width="40%" height="40%"
+        <li><img width="60px" height="70px"
                 src="https://imgr.search.brave.com/Pi4CzZc2GZp817EEMNS963Vt0JX4c2HdV7oL4zXwmPE/fit/1200/1200/ce/1/aHR0cHM6Ly9hbmRy/b2lkLWpzLmdpdGh1/Yi5pby9pbWcvbm9k/ZWpzLWljb24tbG9n/by1wbmctdHJhbnNw/YXJlbnQucG5n">
         </li>
         <li>
-            <h2><a href="#">JavaScript<br>Clases</a>
-            </h2>
+            <h2><a href="#">Clases</a></h2>
         </li>
-        <li>
-            <h4><a href="#">Definiendo clases</a></h4>
-        </li>
+        </h1>
         <li>
             <h2><a href="#">Sentencias</a>
             </h2>
-        </li>
-        <li>
-            <h4><a href="#">Control de flujo</a></h4>
         </li>
     </ul>
 </body>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div.estatico {
+        width: 10%;
+        height: 10%;
+        border: 2px dotted green;
+        position: static;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      div.relativo {
+        width: 10%;
+        height: 10%;
+        border: 2px dotted green;
+        position: relative;
+        left: 25%;
+      }
+
+      div.fijo {
+        width: 10%;
+        height: 10%;
+        border: 2px dotted green;
+        position: fixed;
+        top: 0px;
+        left: 0%;
+        background-color: grey;
+        z-index: 1;
+      }
+
+      h1 {
+        position: relative;
+        z-index: -1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Encabezado</h1>
+    <div class="estatico">Contenedor</div>
+    <p>Parrafo</p>
+    <div class="relativo">Contenedor relativo</div>
+    <p>Párrafo</p>
+    <div class="fijo">Contenedor fijo</div>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab provident
+      quisquam temporibus ex nemo qui vel, dolorum facilis hic aliquid adipisci
+      in voluptatibus numquam voluptatum doloremque nihil commodi? Magni,
+      veniam!
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab provident
+      quisquam temporibus ex nemo qui vel, dolorum facilis hic aliquid adipisci
+      in voluptatibus numquam voluptatum doloremque nihil commodi? Magni,
+      veniam!
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab provident
+      quisquam temporibus ex nemo qui vel, dolorum facilis hic aliquid adipisci
+      in voluptatibus numquam voluptatum doloremque nihil commodi? Magni,
+      veniam!
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab provident
+      quisquam temporibus ex nemo qui vel, dolorum facilis hic aliquid adipisci
+      in voluptatibus numquam voluptatum doloremque nihil commodi? Magni,
+      veniam!
+    </p>
+  </body>
+</html>
