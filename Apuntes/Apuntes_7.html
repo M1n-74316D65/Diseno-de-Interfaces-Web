@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container-flexible{
+            display: flex;
+            background-color:gray;
+            flex-direction:row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        div.container-flexible > a{
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            margin: 0px 5px;
+            width: 200px;
+            text-align: center;
+        }
+        div.container-flexible > a:hover{
+            background-color: gainsboro;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-flexible">
+        <a href="#">Incio</a>
+        <a href="#">Productos</a>
+        <a href="#">Outlet</a>
+        <a href="#">Contacto</a>
+    </div>
+</body>
+</html>
