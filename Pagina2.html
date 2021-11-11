@@ -4,10 +4,12 @@
 <head>
   <title>Pagina web ejemplo</title>
   <meta charset="UTF-8">
+  <!-- Importo la fuente elegida -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Script para animar el indice. -->
   <script>
     window.addEventListener('DOMContentLoaded', () => {
 
@@ -22,7 +24,6 @@
         });
       });
 
-      // Track all sections that have an `id` applied
       document.querySelectorAll('section[id]').forEach((section) => {
         observer.observe(section);
       });
@@ -69,7 +70,6 @@
       color: #666;
     }
 
-    /** Poor man's reset **/
     * {
       box-sizing: border-box;
     }
@@ -129,13 +129,37 @@
 <body>
   <main>
     <div class="content">
-      <h1>Smooth Scrolling Sticky ScrollSpy Navigation</h1>
-      <p><em>Want an explanation of how this works?<br />&rarr; <a
-            href="https://www.bram.us/2020/01/10/smooth-scrolling-sticky-scrollspy-navigation/"
-            target="_top">https://www.bram.us/2020/01/10/smooth-scrolling-sticky-scrollspy-navigation/</a></em></p>
+      <h1>JavaScript</h1>
       <section id="introduction">
-        <h2>Introduction</h2>
-        <p>…</p>
+        <h2>Clases</h2>
+        <p>Las clases de javascript, introducidas en ECMAScript 2015, son una mejora sintáctica sobre la herencia basada
+          en prototipos de JavaScript. La sintaxis de las clases no introduce un nuevo modelo de herencia orientada a
+          objetos en JavaScript. Las clases de JavaScript proveen una sintaxis mucho más clara y simple para crear
+          objetos y lidiar con la herencia.
+        </p>
+        <section id="endpoints--dClases">
+          <h3>Definiendo clases</h3>
+          <p>Las clases son "funciones especiales", como las expresiones de funciones y declaraciones de funciones, la
+            sintaxis de una clase tiene dos componentes: expresiones de clases y declaraciones de clases.
+          </p>
+          <section id="endpoints--dClases--decClases">
+            <h4>Declaracion de clases</h4>
+            <p>Una manera de definir una clase es mediante una declaración de clase. Para declarar una clase, se utiliza
+              la palabra reservada class y un nombre para la clase "Rectangulo".
+            </p>
+            <section id="alojamiento"></section>
+            <h5>Alojamiento</h5>
+            <p>Una importante diferencia entre las declaraciones de funciones y las declaraciones de clases es que las
+              declaraciones de funciones son alojadas y las declaraciones de clases no lo son. En primer lugar necesitas
+              declarar tu clase y luego acceder a ella, de otro modo el ejemplo de código siguiente arrojará un
+              ReferenceError:
+            </p>
+          </section>
+        </section>
+        <section id="endpoints--eClases">
+          <h3>Ejemplo de clase</h3>
+          <p>…</p>
+        </section>
       </section>
       <section id="request-response">
         <h2>Request &amp; Response</h2>
