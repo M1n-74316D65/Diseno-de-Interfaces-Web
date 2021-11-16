@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="es_ES">
 
-<head>
-  <title>JavaScript - Clases</title>
-  <meta charset="UTF-8" />
-  <!-- Importo la fuente elegida -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Script para animar el indice. -->
-  <script>
+  <head>
+    <title>JavaScript - Clases</title>
+    <meta charset="UTF-8" />
+    <!-- Importo la fuente elegida -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Script para animar el indice. -->
+    <script>
     window.addEventListener("DOMContentLoaded", () => {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -33,7 +36,7 @@
       });
     });
   </script>
-  <style>
+    <style>
     /* 1. Enable smooth scrolling */
     html {
       scroll-behavior: smooth;
@@ -135,87 +138,88 @@
       padding: .2em .6em;
     }
   </style>
-</head>
+  </head>
 
-<body>
-  <main>
-    <div class="content">
-      <h1>JavaScript</h1>
-      <section id="introduction">
-        <h2>Clases</h2>
-        <p>
-          Las clases de javascript, introducidas en ECMAScript 2015, son una
-          mejora sintáctica sobre la herencia basada en prototipos de
-          JavaScript. La sintaxis de las clases no introduce un nuevo modelo
-          de herencia orientada a objetos en JavaScript. Las clases de
-          JavaScript proveen una sintaxis mucho más clara y simple para crear
-          objetos y lidiar con la herencia.
-        </p>
-        <section id="endpoints--dClases">
-          <h3>Definiendo clases</h3>
+  <body>
+    <main>
+      <div class="content">
+        <h1>JavaScript</h1>
+        <section id="introduction">
+          <h2>Clases</h2>
           <p>
-            Las clases son "funciones especiales", como las expresiones de
-            funciones y declaraciones de funciones, la sintaxis de una clase
-            tiene dos componentes: expresiones de clases y declaraciones de
-            clases.
+            Las clases de javascript, introducidas en ECMAScript 2015, son una
+            mejora sintáctica sobre la herencia basada en prototipos de
+            JavaScript. La sintaxis de las clases no introduce un nuevo modelo
+            de herencia orientada a objetos en JavaScript. Las clases de
+            JavaScript proveen una sintaxis mucho más clara y simple para crear
+            objetos y lidiar con la herencia.
           </p>
-          <section id="endpoints--dClases--decClases">
-            <h4>Declaracion de clases</h4>
+          <section id="endpoints--dClases">
+            <h3>Definiendo clases</h3>
             <p>
-              Una manera de definir una clase es mediante una declaración de
-              clase. Para declarar una clase, se utiliza la palabra reservada
-              class y un nombre para la clase "Rectangulo".
+              Las clases son "funciones especiales", como las expresiones de
+              funciones y declaraciones de funciones, la sintaxis de una clase
+              tiene dos componentes: expresiones de clases y declaraciones de
+              clases.
             </p>
-            <!-- Codigo insertado. -->
-            <!-- HTML generated using hilite.me -->
-            <div class="codigo">
-              <pre style="margin: 0; line-height: 125%"><span style="font-weight: bold">class</span> <span style="font-weight: bold">Rectangulo</span> {
+            <section id="endpoints--dClases--decClases">
+              <h4>Declaracion de clases</h4>
+              <p>
+                Una manera de definir una clase es mediante una declaración de
+                clase. Para declarar una clase, se utiliza la palabra reservada
+                class y un nombre para la clase "Rectangulo".
+              </p>
+              <!-- Codigo insertado. -->
+              <div class="codigo">
+                <pre style="margin: 0; line-height: 125%"><span style="font-weight: bold">class</span> <span style="font-weight: bold">Rectangulo</span> {
   constructor(alto, ancho) <span style="border: 1px solid #FF0000">{</span>
     this.alto = alto;
     this.ancho = ancho;
   }
 <span style="border: 1px solid #FF0000">}</span>
 </pre>
-            </div>
+              </div>
 
-            <section id="alojamiento"></section>
-            <h5>Alojamiento</h5>
-            <p>
-              Una importante diferencia entre las declaraciones de funciones y
-              las declaraciones de clases es que las declaraciones de
-              funciones son alojadas y las declaraciones de clases no lo son.
-              En primer lugar necesitas declarar tu clase y luego acceder a
-              ella, de otro modo el ejemplo de código siguiente arrojará un
-              ReferenceError:
-            </p>
+              <section id="alojamiento"></section>
+              <h5>Alojamiento</h5>
+              <p>
+                Una importante diferencia entre las declaraciones de funciones y
+                las declaraciones de clases es que las declaraciones de
+                funciones son alojadas y las declaraciones de clases no lo son.
+                En primer lugar necesitas declarar tu clase y luego acceder a
+                ella, de otro modo el ejemplo de código siguiente arrojará un
+                ReferenceError:
+              </p>
+            </section>
+          </section>
+          <section id="endpoints--eClases">
+            <h3>Ejemplo de clase</h3>
+            <p>…</p>
           </section>
         </section>
-        <section id="endpoints--eClases">
-          <h3>Ejemplo de clase</h3>
-          <p>…</p>
-        </section>
-      </section>
-    </div>
-    <nav class="section-nav">
-      <ol>
-        <li>
-          <img width="40%" height="40%"
-            src="https://imgr.search.brave.com/Pi4CzZc2GZp817EEMNS963Vt0JX4c2HdV7oL4zXwmPE/fit/1200/1200/ce/1/aHR0cHM6Ly9hbmRy/b2lkLWpzLmdpdGh1/Yi5pby9pbWcvbm9k/ZWpzLWljb24tbG9n/by1wbmctdHJhbnNw/YXJlbnQucG5n" />
-        </li>
-        <li><a href="#introduction">Clases</a>
-          <ol>
-            <li><a href="#endpoints--dClases">Definiendo clases</a>
-              <ol>
-                <li><a href="#endpoints--dClases--decClases">Declaracion de clases</a></li>
-                <li><a href="#endpoints--dClases--decClases">Alojamiento</a></li>
-              </ol>
-            </li>
-            <li><a href="#endpoints--eClases">Ejemplo de clase</a></li>
-          </ol>
-        </li>
-      </ol>
-    </nav>
-  </main>
-</body>
+      </div>
+      <nav class="section-nav">
+        <ol>
+          <li>
+            <img width="40%" height="40%"
+              src="https://imgr.search.brave.com/Pi4CzZc2GZp817EEMNS963Vt0JX4c2HdV7oL4zXwmPE/fit/1200/1200/ce/1/aHR0cHM6Ly9hbmRy/b2lkLWpzLmdpdGh1/Yi5pby9pbWcvbm9k/ZWpzLWljb24tbG9n/by1wbmctdHJhbnNw/YXJlbnQucG5n"
+              />
+          </li>
+          <li><a href="#introduction">Clases</a>
+            <ol>
+              <li><a href="#endpoints--dClases">Definiendo clases</a>
+                <ol>
+                  <li><a href="#endpoints--dClases--decClases">Declaracion de
+                      clases</a></li>
+                  <li><a href="#endpoints--dClases--decClases">Alojamiento</a></li>
+                </ol>
+              </li>
+              <li><a href="#endpoints--eClases">Ejemplo de clase</a></li>
+            </ol>
+          </li>
+        </ol>
+      </nav>
+    </main>
+  </body>
 
 </html>
