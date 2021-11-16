@@ -123,11 +123,6 @@
       margin-bottom: 2rem;
     }
 
-    /** enlarge the sections for this demo, so that we have a long scrollable page **/
-    section {
-      padding-bottom: 20rem;
-    }
-
     div.codigo {
       background: #ffffff;
       overflow: auto;
@@ -180,24 +175,120 @@
 </pre>
               </div>
 
-              <section id="alojamiento"></section>
-              <h5>Alojamiento</h5>
-              <p>
-                Una importante diferencia entre las declaraciones de funciones y
-                las declaraciones de clases es que las declaraciones de
-                funciones son alojadas y las declaraciones de clases no lo son.
-                En primer lugar necesitas declarar tu clase y luego acceder a
-                ella, de otro modo el ejemplo de código siguiente arrojará un
-                ReferenceError:
-              </p>
+              <section id="alojamiento">
+                <h5>Alojamiento</h5>
+                <p>
+                  Una importante diferencia entre las declaraciones de funciones
+                  y
+                  las declaraciones de clases es que las declaraciones de
+                  funciones son alojadas y las declaraciones de clases no lo
+                  son.
+                  En primer lugar necesitas declarar tu clase y luego acceder a
+                  ella, de otro modo el ejemplo de código siguiente arrojará un
+                  ReferenceError:
+                </p>
+                <!-- Codigo insertado. -->
+                <!-- HTML generated using hilite.me -->
+                <div class="codigo">
+                  <pre style="margin: 0; line-height: 125%"><span style="font-weight: bold">const</span> p = <span style="font-weight: bold">new</span> Rectangle(); <span style="font-style: italic">// ReferenceError</span>
+
+<span style="font-weight: bold">class</span> Rectangle {}
+</pre>
+                </div>
+              </section>
+            </section>
+            <section class="endpoints--expre--clases">
+              <h4>Expresiones de clases</h4>
+              <p>Una expresión de clase es otra manera de definir una clase. Las
+                expresiones de clase pueden ser nombradas o anónimas. El nombre
+                dado a la expresión de clase nombrada es local dentro del cuerpo
+                de la misma.</p>
+              <!-- HTML generated using hilite.me -->
+              <div class="codigo">
+                <pre style="margin: 0; line-height: 125%"><span style="font-style: italic">// Anonima</span>
+<span style="font-weight: bold">let</span> Rectangulo = <span style="font-weight: bold">class</span> {
+  constructor(alto, ancho) {
+    <span style="font-weight: bold">this</span>.alto = alto;
+    <span style="font-weight: bold">this</span>.ancho = ancho;
+  }
+};
+
+console.log(Rectangulo.name);
+<span style="font-style: italic">// output: &quot;Rectangulo&quot;</span>
+
+<span style="font-style: italic">// Nombrada</span>
+<span style="font-weight: bold">let</span> Rectangulo = <span style="font-weight: bold">class</span> Rectangulo2 {
+  constructor(alto, ancho) {
+    <span style="font-weight: bold">this</span>.alto = alto;
+    <span style="font-weight: bold">this</span>.ancho = ancho;
+  }
+};
+console.log(Rectangulo.name);
+<span style="font-style: italic">// output: &quot;Rectangulo2&quot;</span>
+</pre>
+              </div>
+
             </section>
           </section>
-          <section id="endpoints--eClases">
-            <h3>Ejemplo de clase</h3>
-            <p>…</p>
+          <section class="endpoints--cuerpoClase">
+            <h3>Cuerpo de la clase y definición de métodos</h3>
+            <p>El contenido de una clase es la parte que se encuentra entre las
+              llaves {}. Este es el lugar se definen los miembros de clase, como
+              los métodos o constructores.</p>
+            <section class="endpoints--cuerpoClase--estricto">
+              <h4>Modo estricto</h4>
+              <p>El cuerpo de las declaraciones de clase y las expresiones de
+                clase son ejecutadas en modo estricto. En otras palabras, el
+                código escrito aquí está sujeto a una sintaxis más estricta para
+                aumentar el rendimiento, se arrojarán algunos errores
+                silenciosos y algunas palabras clave están reservadas para
+                versiones futuras de ECMAScript.
+              </p>
+            </section>
+            <section class="endpoints--cuerpoClase--constructor">
+              <h4>Constructor</h4>
+              <p>El método constructor es un método especial para crear e
+                inicializar un objeto creado con una clase. Solo puede haber un
+                método especial con el nombre "constructor" en una clase. Si
+                esta contiene mas de una ocurrencia del método constructor, se
+                arrojará un Error SyntaxError</p>
+              <p>
+                Un constructor puede usar la palabra reservada super para llamar
+                al constructor de una superclase</p>
+            </section>
+            <section class="endpoints--cuerpoClase--prototipo">
+              <h4>Métodos prototipo</h4>
+              <!-- HTML generated using hilite.me -->
+              <div class="codigo">
+                <pre style="margin: 0;
+                  line-height: 125%"><span style="font-weight: bold">class</span> Rectangulo {
+  constructor (alto, ancho) {
+    <span style="font-weight: bold">this</span>.alto = alto;
+    <span style="font-weight: bold">this</span>.ancho = ancho;
+  }
+  <span style="font-style: italic">// Getter</span>
+  get area() {
+     <span style="font-weight: bold">return</span> <span style="font-weight: bold">this</span>.calcArea();
+   }
+  <span style="font-style: italic">// Método</span>
+  calcArea () {
+    <span style="font-weight: bold">return</span> <span style="font-weight: bold">this</span>.alto * <span style="font-weight: bold">this</span>.ancho;
+  }
+}
+
+<span style="font-weight: bold">const</span> cuadrado = <span style="font-weight: bold">new</span> Rectangulo(10, 10);
+
+console.log(cuadrado.area); <span style="font-style: italic">// 100</span>
+</pre>
+              </div>
+
+            </section>
           </section>
         </section>
       </div>
+
+      <!-- !Indice -->
+
       <nav class="section-nav">
         <ol>
           <li>
@@ -214,12 +305,19 @@
                   <li><a href="#endpoints--dClases--decClases">Alojamiento</a></li>
                 </ol>
               </li>
-              <li><a href="#endpoints--eClases">Ejemplo de clase</a></li>
-            </ol>
-          </li>
-        </ol>
-      </nav>
-    </main>
-  </body>
+              <li><a href="#endpoints--cuerpoClase">Cuerpo de la clase</a>
+                <ol>
+                  <li><a href="#endpoints--cuerpoClase--estricto">Modo estricto</a></li>
+                  <li><a href="#endpoints--cuerpoClase--constructor">Constructor</a></li>
+                  <li><a href="#endpoints--cuerpoClase--prototipo">Métodos
+                      prototipo</a>
+                  </li>
+                </ol>
+              </ol>
+            </li>
+          </ol>
+        </nav>
+      </main>
+    </body>
 
-</html>
+  </html>
