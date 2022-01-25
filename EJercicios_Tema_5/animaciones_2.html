@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+    h2{
+      font-size: 40pt;
+      color: palegreen;
+      position: relative;
+      animation-name: mover_texto;
+      animation-duration: 10s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      display: inline-block;
+}
+h2.linear{
+  animation-timing-function: linear;
+}
+h2.ease-in{
+  animation-timing-function: ease-in;
+}
+h2.ease-out{
+  animation-timing-function: ease-out;
+}
+h2.ease-in-out{
+  animation-timing-function: ease-in-out;
+}
+@keyframes mover_texto{
+  from {top: 0px; left: 0px;}
+  to {top: 0px; left: 500px;}
+}
+    </style>
+  </head>
+  <body>
+    <h1>ANIMACIONES</h1>
+    <h2 class="linear">Hola</h2>
+    <br>
+    <h2 class="ease-in">Hola</h2>
+    <br>
+    <h2 class="ease-out">Hola</h2>
+    <br>
+    <h2 class="aese-in-out">Hola</h2>
+  </body>
+</html>

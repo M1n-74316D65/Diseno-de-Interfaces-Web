@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title></title>
+        <link rel="stylesheet" href="" />
+        <style type="text/css">
+            div {
+                margin: auto;
+                width: 400px;
+                height: 100px;
+            }
+            div.nomoverser {
+                position: relative;
+                background-color: gainsboro;
+                border: 1px dashed black;
+            }
+            div.moverse {
+                position: absolute;
+                background-color: greenyellow;
+                border: 1px solid black;
+                /*transform: rotate(90deg);*/
+                transform-origin: 100% 0%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Encabezado</h1>
+        <div class="nomoverser">
+            <div class="moverse"></div>
+        </div>
+    </body>
+</html>

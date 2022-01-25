@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Reloj</title>
+        <link rel="stylesheet" href="" />
+        <style type="text/css">
+            div.reloj {
+                position: relative;
+                background-color: gainsboro;
+                width: 500px;
+                height: 500px;
+            }
+            div.segundero {
+                height: 45%;
+                position: absolute;
+                background-color: greenyellow;
+                border: 2px solid black;
+                top: 50%;
+                left: 48.4%;
+                transform: rotate(180deg);
+                transform-origin: 100% 0%;
+                animation-name: segunder;
+                animation-duration: 60s;
+                animation-iteration-count: infinite;
+                animation-timing-function: steps(60);
+            }
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+            @keyframes segunder {
+                0% {
+                    transform: rotate(-180deg);
+                }
+                100% {
+                    transform: rotate(180deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Reloj</h1>
+        <div class="reloj">
+            <img src="./reloj.jpg" />
+            <div class="segundero"></div>
+        </div>
+    </body>
+</html>

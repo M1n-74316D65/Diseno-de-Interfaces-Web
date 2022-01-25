@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Animaciones</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+    div.ejemplo1{
+      width: 100px;
+      height: 100px;
+      background-color: orchid;
+      position: relative;
+      border-radius: 100%;
+      animation-name: colorMover;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-delay: 1s;
+      animation-direction: normal;
+}
+@keyframes colorMover{
+0% {background-color: orchid;top: 0px;left: 0%;}
+25% {background-color: palegoldenrod;top: 25%;left: 25%;}
+50% {background-color: yellowgreen;top: 50%;left: 50%;}
+75% {background-color: darkolivegreen;top: 75%;left: 75%;}
+100% {background-color: orchid;top: 100%;left: 100%;}
+}
+    </style>
+  </head>
+  <body>
+    <h1>ANIMACIONES</h1>
+    <div class="ejemplo1">
+      
+    </div>
+  </body>
+</html>

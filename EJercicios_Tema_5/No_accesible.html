@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:v="urn:schemas-microsoft-com:vml"
+    xmlns:o="urn:schemas-microsoft-com:office:office">
+    <head>
+        <style>
+			.boton{
+				<!--estilos botón no accesible-->
+				width:250px;height:50px;
+				background-color:#F00;
+				cursor:pointer;
+				border-radius:2px;
+			}
+			.boton:hover{
+				background-color: #838
+			}
+			.boton p{
+				text-align:center;
+				color:#fff;
+				
+			}
+	</style>
+    </head>
+
+    <body>
+
+        <!--botones no accesibles-->
+        <div class="boton">
+            <p>Botón no accesible</p>
+        </div>
+
+
+        <!--mala semántica-->
+
+        <font size="7">Esto es un título</font>
+        <br><br>
+        Esta es la primera sección del documento.
+        <br><br>
+        Esto es un segundo párrafo
+        <br><br>
+        Elemeno 1 de una lista
+        <br><br>
+        Elemeno 2 de una lista
+        <br><br>
+        Elemeno 3 de una lista
+        <br><br>
+        <font size="5">Esto es un subtítulo</font>
+        <br><br>
+        Esta es la primera subsección del docuemnto.
+        <br><br>
+        <font size="5">Esto es otro subtítulo</font>
+        <br><br>
+        Esta es la segunda subsección del documento
+
+        <!--esto es un mal enlace-->
+        <p>La accesibilidad es algo imprescindible en el desarrollo web. Para
+            aprender más sobre accesibilidad, <a
+                href="https://www.w3.org/WAI/fundamentals/accessibility-intro/es">haz
+                clic aquí</a>.</p>
+
+
+        <!--input no accesible-->
+
+        <p>Introduce tu nombre: <input type="text" id="nombre" name="nombre"></p>
+        <!--imagen no accesible-->
+
+        <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSgCf35feVkd0na6POYpyX7Hmi0jRqjNNWAw&usqp=CAU">
+        <!--disposición de página no accesible, utilizando tablas. Lector dará lecturas confusas si muchas tablas anidadas-->
+        <table width="1200">
+            <!-- header -->
+            <tr id="heading">
+                <td>
+                    <h1>Header</h1>
+                </td>
+            </tr>
+
+            <!-- main -->
+            <tr id="main">
+                <tr>
+                    <td id="article">
+                        <h2>Título del artículo</h2>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td id="section">
+                        <h2>Título de la sección</h2>
+                    </td>
+                </tr>
+            </tr>
+
+            <!-- footer-->
+            <tr id="footer">
+                <td>
+                    <p>Contenido del footer</p>
+                </td>
+            </tr>
+        </table>
+
+    </body>
+</html>
